@@ -158,8 +158,7 @@
 									href="{{url}}"
 									class="btn btn-link no-underline hover:no-underline flex items-center w-max text-fc-dark-green/85 hover:text-fc-dark-green md:ms-auto"
 								>
-									See All
-									{{name}}
+									{{t "see_more"}}
 									<i class="ph ph-arrow-up-right"></i>
 								</a>
 							{{/if}}
@@ -169,7 +168,7 @@
 						href="{{url}}"
 						class="btn border-fc-dark-green bg-fc-dark-green/85 hover:bg-fc-dark-green text-white"
 					>
-						Browse more topics
+						{{t "show_all_articles" count=name}}
 					</a>
 				{{/each}}
 			</div>
