@@ -27,6 +27,9 @@
 				id="section-sidebar"
 				class="w-full md:w-[25%] h-max menu rounded-box p-0 gap-2"
 			>
+				<h2 class="text-lg w-full font-semibold">
+          {{t 'articles_in_section'}}
+        </h2>
 				{{#each section.articles}}
 					<a
 						href="{{url}}"
@@ -67,7 +70,7 @@
 				{{#with article}}
 				<div id="article-votes" class="flex flex-col items-center justify-center mt-4">
 					<h5 class="text-fc-dark text-base">
-						Was this article helpful?
+						{{t 'was_this_article_helpful'}}
 					</h5>
 					<div class="article-votes-controls mt-2" role="group" aria-labelledby="article-votes-label">
 						{{
