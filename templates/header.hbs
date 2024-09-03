@@ -55,7 +55,7 @@
 			{{/if}}
 
 			<a href="{{page_path 'new_request'}}" class="hidden md:inline-flex btn btn-link no-underline hover:no-underline text-white hover:text-fc-green px-2">
-				Contact us
+				{{dc.ea_fcm_hc_contact_us_text}}
 			</a>
 
 			{{#unless signed_in}}
@@ -116,7 +116,7 @@
 						<span class="flex items-center justify-center me-2">
 							<i class="ph ph-globe" style="font-size: 20px;"></i>
 						</span>
-						Change Language
+						{{current_locale.name}}
 					</div>
 					<div class="collapse-content">
 						<div class="flex flex-col w-full gap-1.5">
@@ -139,7 +139,7 @@
 			href="{{page_path 'new_request'}}"
 			class="text-sm text-white font-semibold hover:bg-fc-green px-0 py-2 rounded-md"
 		>
-			Submit a Request
+			{{dc.ea_fcm_hc_contact_us_text}}
 		</a>
 
 		{{#unless signed_in}}
