@@ -83,59 +83,53 @@
 				</h3>
 
 				<div class="overflow-x-auto mt-6">
-					{{#if signed_in}}
-						{{#if requests}}
-							<table class="table">
-								<!-- head -->
-								<thead>
+					{{#if requests}}
+						<table class="table">
+							<!-- head -->
+							<thead>
+								<tr>
+									<th
+										class="text-md text-fc-dark font-bold w-[40%]"
+									>
+										Subject
+									</th>
+									<th
+										class="text-md text-fc-dark font-bold w-[20%]"
+									>
+										Ticket ID
+									</th>
+									<th
+										class="text-md text-fc-dark font-bold w-[20%]"
+									>
+										Last Updated
+									</th>
+									<th
+										class="text-md text-fc-dark font-bold w-[20%]"
+									>
+										Status
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<!-- row -->
+								{{#each requests}}
 									<tr>
-										<th
-											class="text-md text-fc-dark font-bold w-[40%]"
-										>
-											Subject
-										</th>
-										<th
-											class="text-md text-fc-dark font-bold w-[20%]"
-										>
-											Ticket ID
-										</th>
-										<th
-											class="text-md text-fc-dark font-bold w-[20%]"
-										>
-											Last Updated
-										</th>
-										<th
-											class="text-md text-fc-dark font-bold w-[20%]"
-										>
-											Status
-										</th>
+										<td>
+											<a href="{{url}}" class="">
+												{{#if subject}}
+													{{subject}}
+												{{/if}}
+											</a>
+										</td>
+										<td>{{id}}</td>
+										<td>
+											{{date updated_at timeago=true}}
+										</td>
+										<td>{{status_name}}</td>
 									</tr>
-								</thead>
-								<tbody>
-									<!-- row -->
-									{{#each requests}}
-										<tr>
-											<td>
-												<a href="{{url}}">
-													{{#if subject}}
-														{{subject}}
-													{{/if}}
-												</a>
-											</td>
-											<td>{{id}}</td>
-											<td>
-												{{date updated_at timeago=true}}
-											</td>
-											<td>{{status_name}}</td>
-										</tr>
-									{{/each}}
-								</tbody>
-							</table>
-						{{else}}
-							<p>
-								You don't have any tickets yet.
-							</p>
-						{{/if}}
+								{{/each}}
+							</tbody>
+						</table>
 					{{else}}
 						<p>
 							You don't have any tickets yet.
