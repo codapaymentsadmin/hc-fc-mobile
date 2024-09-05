@@ -4,14 +4,16 @@
 		alt="banner"
 		class="w-full h-[400px] object-cover object-[50%_25%]"
 	/>
-	<div class="w-full h-full flex items-center justify-center absolute top-0">
+	<div
+		class="w-full h-full flex items-center justify-center absolute top-0 px-4"
+	>
 		<label
-			class="input input-bordered h-[32px] w-full sm:w-[350px] lg:w-[500px] flex items-center mx-auto gap-2 rounded-full border-fc-dark/50 bg-white focus:border-fc-green focus:outline-fc-green focus-within:outline-fc-green focus-within:border-fc-green"
+			class="input h-[32px] w-full md:w-[450px] lg:w-[500px] flex items-center mx-auto gap-2 rounded-full border border-fc-dark/50 bg-white focus:border-fc-green focus:outline-fc-green focus-within:outline-fc-green focus-within:border-fc-green"
 		>
 			{{search
 				instant=true
 				submit=false
-				class="min-w-[250px] w-full sm:w-[350px] lg:w-[500px] border-none focus:outline-none text-sm"
+				class="min-w-[250px] w-full md:w-[450px] lg:w-[500px] border-none focus:outline-none text-sm"
 			}}
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +72,7 @@
               <div
                 class="flex-1 flex flex-col justify-start"
               >
-                <a href="{{url}}" class="text-lg text-fc-dark-green hover:text-fc-green transition-colors font-bold">
+                <a href="{{url}}" class="text-lg text-fc-dark-green hover:text-fc-dark-green/85 transition-colors font-bold">
                   {{title}}
                 </a>
                 <h6 class="text-xs text-fc-dark mt-1.5">
