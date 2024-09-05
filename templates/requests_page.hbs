@@ -118,6 +118,11 @@
 											<a href="{{url}}" class="">
 												{{#if subject}}
 													{{subject}}
+												{{else}}
+													{{excerpt
+														description
+														characters=50
+													}}
 												{{/if}}
 											</a>
 										</td>
