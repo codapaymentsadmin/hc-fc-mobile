@@ -2721,6 +2721,10 @@ details.collapse summary::-webkit-details-marker {
   margin-inline-end: 0.5rem;
 }
 
+.me-4 {
+  margin-inline-end: 1rem;
+}
+
 .ms-4 {
   margin-inline-start: 1rem;
 }
@@ -2966,6 +2970,10 @@ details.collapse summary::-webkit-details-marker {
   border-width: 2px;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .border-none {
   border-style: none;
 }
@@ -2992,6 +3000,11 @@ details.collapse summary::-webkit-details-marker {
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
 .border-gray-800 {
@@ -3180,6 +3193,10 @@ details.collapse summary::-webkit-details-marker {
   font-weight: 600;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .leading-4 {
   line-height: 1rem;
 }
@@ -3203,6 +3220,11 @@ details.collapse summary::-webkit-details-marker {
   color: rgb(4 149 63 / 0.85);
 }
 
+.text-fc-green {
+  --tw-text-opacity: 1;
+  color: rgb(7 244 104 / var(--tw-text-opacity));
+}
+
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
@@ -3211,6 +3233,11 @@ details.collapse summary::-webkit-details-marker {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-yellow-500 {
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -3398,6 +3425,10 @@ form footer input[type="submit"] {
   color: #1a1c19;
   padding: 8px 12px;
   cursor: pointer;
+}
+
+form footer input[type="submit"]:disabled {
+  background-color: #d1d5db;
 }
 
 .form-field input[type="checkbox"] + label {
