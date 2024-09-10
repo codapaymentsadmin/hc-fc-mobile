@@ -12,12 +12,12 @@
 		class="w-full h-full flex items-center justify-center absolute top-0 px-4"
 	>
 		<label
-			class="input h-[32px] w-full md:w-[450px] lg:w-[500px] flex items-center mx-auto gap-2 rounded-full border border-fc-dark/50 bg-white focus:border-fc-green focus:outline-fc-green focus-within:outline-fc-green focus-within:border-fc-green"
+			class="input h-[48px] w-full md:w-[450px] lg:w-[500px] flex items-center mx-auto gap-2 rounded-full border border-fc-dark/50 bg-white focus:border-fc-green focus:outline-fc-green focus-within:outline-fc-green focus-within:border-fc-green"
 		>
 			{{search
 				instant=true
 				submit=false
-				class="min-w-[250px] w-full md:w-[450px] lg:w-[500px] border-none focus:outline-none text-sm"
+				class="min-w-[250px] w-full md:w-[450px] lg:w-[500px] border-none focus:outline-none"
 			}}
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,7 @@
 									<a
 										id="article-{{id}}"
 										href="{{url}}"
-										class="btn btn-outline border-2 border-fc-green hover:border-fc-green hover:bg-fc-green w-full flex font-bold text-fc-dark text-start rounded-md overflow-x-hidden"
+										class="btn btn-outline border-2 border-fc-green hover:border-fc-green hover:bg-fc-green w-full flex font-bold text-[14px] text-fc-dark text-start rounded-md overflow-x-hidden leading-normal"
 									>
 										<span class="w-full line-clamp-1">
 											{{title}}
@@ -112,7 +112,7 @@
 						href="{{url}}"
 						class="btn border-fc-dark-green bg-fc-dark-green/85 hover:bg-fc-dark-green text-white"
 					>
-						{{t "show_all_articles" count=name}}
+						{{t "see_all_sections"}}
 					</a>
 				{{/each}}
 			</div>
