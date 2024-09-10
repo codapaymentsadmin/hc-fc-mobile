@@ -211,9 +211,54 @@ form footer input[type="submit"]:disabled {
 	margin: 0 auto;
 }
 
+#article-content table {
+	@apply !w-full;
+}
+
+#article-content * {
+	@apply bg-transparent;
+}
+
+#article-content table tr td,
+#article-content table tr th {
+	@apply table-fixed border border-fc-dark p-4;
+}
+
+#article-content table th.wysiwyg-indent1,
+#article-content table th.wysiwyg-indent1 {
+	@apply p-4;
+}
+
+#article-content table div.wysiwyg-indent1,
+#article-content table p.wysiwyg-indent1 {
+	@apply p-0;
+}
+
+#article-content table tr td ol {
+	@apply list-decimal ms-4;
+}
+
+#article-content table tr td ul {
+	@apply list-disc ms-4;
+}
+
+/* 
 #article-content p {
 	background-color: transparent;
+} */
+/* #article-content table {
+	border: 1px solid #1a1c19;
 }
+
+#article-content table tr td ol {
+	list-style: decimal;
+	margin-left: 16px;
+}
+
+#article-content table tr td ul {
+	list-style: disc;
+	margin-left: 16px;
+} */
 
 /* Marquee */
 .marquee {
