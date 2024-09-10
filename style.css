@@ -3678,6 +3678,12 @@ form footer input[type="submit"]:disabled {
   outline-color: #e5e7eb;
 }
 
+@media (max-width: 768px) {
+  .max-\[768px\]\:\!hidden {
+    display: none !important;
+  }
+}
+
 @media (max-width: 640px) {
   .max-\[640px\]\:w-full {
     width: 100%;
@@ -3719,6 +3725,10 @@ form footer input[type="submit"]:disabled {
 
   .md\:inline-flex {
     display: inline-flex;
+  }
+
+  .md\:\!hidden {
+    display: none !important;
   }
 
   .md\:hidden {
