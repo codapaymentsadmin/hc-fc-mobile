@@ -3504,6 +3504,16 @@ form footer input[type="submit"]:disabled {
   margin: 0 auto;
 }
 
+#article-content ul {
+  margin-inline-start: 1rem;
+  list-style-type: disc;
+}
+
+#article-content ol {
+  margin-inline-start: 1rem;
+  list-style-type: decimal;
+}
+
 #article-content table {
   width: 100% !important;
 }
