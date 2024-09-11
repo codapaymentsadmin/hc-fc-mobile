@@ -3238,6 +3238,11 @@ details.collapse summary::-webkit-details-marker {
   color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
 }
 
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
 .text-fc-dark {
   --tw-text-opacity: 1;
   color: rgb(26 28 25 / var(--tw-text-opacity));
@@ -3520,6 +3525,31 @@ form footer input[type="submit"]:disabled {
 
 #article-content * {
   background-color: transparent;
+}
+
+#article-content a {
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
+#article-content a:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+#article-content a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+#article-content a {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+#article-content a:hover {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 #article-content table tr td,
