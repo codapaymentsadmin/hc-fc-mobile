@@ -227,6 +227,10 @@ form footer input[type="submit"]:disabled {
 	@apply bg-transparent;
 }
 
+#article-content a {
+	@apply link text-blue-500 hover:text-blue-600;
+}
+
 #article-content table tr td,
 #article-content table tr th {
 	@apply table-fixed border border-fc-dark p-4;
