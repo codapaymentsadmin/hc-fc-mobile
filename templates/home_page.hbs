@@ -9,8 +9,17 @@
 <section id="main-content" class="w-full">
 	<section id="all-articles-section" class="flex-1 bg-white py-8">
 		<article class="flex-1 md:max-w-7xl mx-auto flex flex-col px-4 xl:px-0">
-			<div class="w-full flex flex-col gap-4 mt-8">
-				{{#each categories}}
+			<div class="w-full flex flex-col items-center gap-4 mt-8">
+				<h2 class="text-xl font-bold text-fc-dark">
+					Need Help? Contact Our Support Team
+				</h2>
+				<a
+					href="/hc/en-us/articles/10722952988559-Where-to-contact-Customer-Support"
+					class="btn btn-outline border-2 border-fc-green hover:border-fc-green hover:bg-fc-green w-full flex font-bold text-[14px] text-fc-dark text-start rounded-md overflow-x-hidden leading-normal"
+				>
+					Support Options
+				</a>
+				{{!-- {{#each categories}}
 					{{#each sections}}
 						<div class="w-full flex flex-col gap-2">
 							<h4
@@ -29,7 +38,7 @@
 							{{/each}}
 						</div>
 					{{/each}}
-				{{/each}}
+				{{/each}} --}}
 			</div>
 		</article>
 	</section>

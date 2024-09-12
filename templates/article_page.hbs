@@ -67,48 +67,7 @@
 				<div id="article-content" class="article-content flex flex-col gap-2">
 					{{article.body}}
 				</div>
-				{{#with article}}
-				<div id="article-votes" class="flex flex-col items-center justify-center mt-4">
-					<h5 class="text-fc-dark text-base">
-						{{t 'was_this_article_helpful'}}
-					</h5>
-					<div class="article-votes-controls mt-2" role="group" aria-labelledby="article-votes-label">
-						{{
-							vote 'up' 
-							role='button' 
-							class='btn btn-sm btn-outline border-fc-dark hover:bg-fc-dark text-fc-dark hover:text-white'
-						}}
-						{{
-							vote 'down' 
-							role='button' 
-							class='btn btn-sm btn-outline border-fc-dark hover:bg-fc-dark text-fc-dark hover:text-white'
-						}}
-					</div>
-					<small class="article-votes-count mt-2">
-						{{vote 'label' class='article-vote-label'}}
-					</small>
-				</div>
-				{{/with}}
 			</article>
 		</section>
 	</div>
-</section>
-
-<section
-	id="create-ticket"
-	class="w-full flex items-center justify-center bg-white"
->
-	<section class="max-w-7xl flex-1 flex flex-col items-center justify-center mx-auto py-8">
-		<h4 class="text-2xl font-bold text-fc-dark text-center">{{dc 'ea_fcm_hc_follow_up_issue_title'}}</h4>
-		<p class="text-md font-semibold text-fc-dark text-center mt-2">
-			{{dc 'ea_fcm_hc_follow_up_issue_subtitle'}}
-		</p>
-		<a
-			href="{{page_path 'new_request'}}"
-			class="btn w-full sm:w-[250px] bg-fc-green hover:bg-fc-green/85 border-none text-fc-dark mt-4"
-		>
-			<i class="ph ph-envelope text-fc-dark text-2xl"></i>
-			{{dc 'ea_fcm_hc_contact_us_text'}}
-		</a>
-	</section>
 </section>
