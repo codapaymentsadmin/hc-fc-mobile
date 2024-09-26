@@ -1,8 +1,8 @@
-<section id="banner" class="w-full h-[400px]">
+<section id="banner" class="w-full h-[300px]">
 	<img
 		src="{{settings.banner}}"
 		alt="banner"
-		class="w-full h-full object-cover object-[50%_25%]"
+		class="w-full h-[300px] object-cover"
 	/>
 </section>
 
@@ -14,13 +14,13 @@
 				class="flex items-center text-sm text-fc-dark gap-2"
 			>
 				<i class="ph ph-caret-left text-md mt-0.5"></i>
-				Back to Homepage
+				{{dc "ea_fcm_hc_back_to_homepage_text"}}
 			</a>
 		</div>
 
 		<section class="flex-1 flex flex-col gap-4 mt-4">
 			<h1 class="text-2xl text-fc-dark font-bold mt-8">
-				Submit a ticket
+				{{t "submit_a_request"}}
 			</h1>
 
 			<div class="w-full lg:w-1/2 mt-4">
@@ -28,20 +28,7 @@
 			</div>
 
 			<p id="ingame-warning" class="hidden text-fc-dark text-sm">
-				<span>
-					<i class="ph ph-bold ph-warning text-yellow-500"></i>
-				</span>
-				For in game inquiries and transcation issues, please visit
-				<span>
-					<a
-						href="https://help.ea.com/en/help-top-issues/?product=fc-mobile"
-						target="_blank"
-						class="text-fc-green hover:text-fc-dark-green transition-colors"
-					>
-						EA FC Mobile Help Center
-					</a>
-				</span>
-				for further investigation
+				{{dc "ea_fcm_hc_form_warning_text"}}
 			</p>
 		</section>
 	</div>
