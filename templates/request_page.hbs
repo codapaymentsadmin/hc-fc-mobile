@@ -1,8 +1,8 @@
-<section id="banner" class="w-full h-[400px]">
+<section id="banner" class="w-full h-[300px]">
 	<img
 		src="{{settings.banner}}"
 		alt="banner"
-		class="w-full h-full object-cover object-[50%_25%]"
+		class="w-full h-[300px] object-cover"
 	/>
 </section>
 
@@ -14,7 +14,7 @@
 				class="flex items-center text-sm gap-2 text-fc-dark"
 			>
 				<i class="ph ph-caret-left text-md mt-0.5"></i>
-				Back to Homepage
+				{{dc "ea_fcm_hc_back_to_homepage_text"}}
 			</a>
 		</div>
 
@@ -38,7 +38,7 @@
 						Created
 					</h5>
 					<p class="text-md text-fc-dark-green font-semibold">
-						{{date request.created_at format="long"}}
+						{{date request.created_at format="medium"}}
 					</p>
 				</div>
 				<div class="w-full flex flex-col items-start px-4 py-2">
@@ -60,12 +60,12 @@
 				>
 					<a
 						href="{{page_path 'my_activities'}}"
-						class="flex items-center text-sm gap-2 text-fc-dark-green"
+						class="flex items-center text-sm gap-2 text-fc-dark-green capitalize"
 					>
 						<i class="ph ph-caret-left text-md mt-0.5"></i>
-						See all tickets
+						{{t "my_requests"}}
 					</a>
-					<h3 class="text-fc-dark text-lg font-bold">
+					<h3 class="text-fc-dark text-lg font-bold mt-4">
 						{{request.subject}}
 					</h3>
 					<p class="text-fc-dark text-sm">

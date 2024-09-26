@@ -10,6 +10,7 @@
 			{{/link}}
 		</div>
 		<div class="navbar-end flex-1">
+			<span class="fi fi-id md:!hidden text-xl"></span>
 			<div class="flex items-stretch">
 				<div
 					tabindex="0"
@@ -17,7 +18,7 @@
 					id="mobile-dropdown-button"
 					class="btn btn-ghost md:hidden ms-auto"
 				>
-					<i class="ph ph-list text-white text-xl"></i>
+					<i class="ph ph-list text-white text-2xl"></i>
 				</div>
 			</div>
 
@@ -54,14 +55,14 @@
 			</div>
 			{{/if}}
 
-			<a href="{{page_path 'new_request'}}" class="hidden md:inline-flex btn btn-link no-underline hover:no-underline text-white hover:text-fc-green px-2">
+			<a href="{{page_path 'new_request'}}" class="hidden md:inline-flex btn btn-link no-underline hover:no-underline text-white hover:text-fc-green px-2 me-2">
 				{{dc 'ea_fcm_hc_contact_us_text'}}
 			</a>
 
-			{{#unless signed_in}}
-				{{#link "sign_in" class=""}}
-					{{t "sign_in"}}
-				{{/link}}
+			{{!-- {{#unless signed_in}}
+				<a href="{{page_path 'sign_in'}}" class="hidden md:inline-flex btn btn-link no-underline hover:no-underline text-white hover:text-fc-green px-2 me-2"></a>
+					{{t 'sign_in'}}
+				</a>
 			{{/unless}}
 
 			{{#if signed_in}}
@@ -87,19 +88,21 @@
 					>
 						<li>
 							<a href="{{page_path 'my_activities'}}" class="text-white text-sm hover:bg-fc-green px-2 py-3 rounded-md font-semibold">
-								My tickets
+								{{t 'my_requests'}}
 							</a>
 						</li>
 						{{#if signed_in}}
 							<li class="mt-2">
 								<a href="{{page_path 'sign_out'}}" class="text-white text-sm hover:bg-fc-green px-2 py-3 rounded-md font-semibold">
-									Sign out
+									{{dc 'ea_fcm_hc_sign_out_text'}}
 								</a>
 							</li>
 						{{/if}}
 					</ul>
 				</div>
-			{{/if}}
+			{{/if}} --}}
+
+			<span class="fi fi-id max-[768px]:!hidden md:inline-block text-xl"></span>
 		</div>
 	</nav>
 	<div
@@ -142,10 +145,13 @@
 			{{dc 'ea_fcm_hc_contact_us_text'}}
 		</a>
 
-		{{#unless signed_in}}
-			{{#link "sign_in" class=""}}
+		{{!-- {{#unless signed_in}}
+			<a
+				href="{{page_path 'sign_in'}}"
+				class="text-sm text-white font-semibold hover:bg-fc-green px-0 py-2 rounded-md"
+			>
 				{{t "sign_in"}}
-			{{/link}}
+			</a>
 		{{/unless}}
 
 		{{#if signed_in}}
@@ -170,18 +176,18 @@
 								href="{{page_path 'my_activities'}}"
 								class="text-white text-sm hover:bg-fc-green px-2 py-3 rounded-md font-semibold"
 							>
-								My tickets
+								{{t 'my_requests'}}
 							</a>
 							<a
 								href="{{page_path 'sign_out'}}"
 								class="text-white text-sm hover:bg-fc-green px-2 py-3 rounded-md font-semibold"
 							>
-								Sign out
+								{{dc 'ea_fcm_hc_sign_out_text'}}
 							</a>
 						</div>
 					</div>
 				</div>
 			</div>
-		{{/if}}
+		{{/if}} --}}
 	</div>
 </header>
