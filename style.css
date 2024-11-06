@@ -2804,10 +2804,6 @@ details.collapse summary::-webkit-details-marker {
   height: 32px;
 }
 
-.h-\[400px\] {
-  height: 400px;
-}
-
 .h-\[48px\] {
   height: 48px;
 }
@@ -2827,10 +2823,6 @@ details.collapse summary::-webkit-details-marker {
 
 .min-h-\[500px\] {
   min-height: 500px;
-}
-
-.w-10 {
-  width: 2.5rem;
 }
 
 .w-4 {
