@@ -1,2 +1,7 @@
 node_modules
+<<<<<<< HEAD
 auto-merge.ps1
+=======
+auto-merge.ps1
+auto-mergev2.ps1
+>>>>>>> origin/master
