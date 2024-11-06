@@ -49,21 +49,6 @@
 				<h1 class="text-2xl font-bold text-fc-dark">
 					{{article.title}}
 				</h1>
-				<div class="w-full flex items-center mt-2">
-					<div class="avatar">
-						<div class="w-10 rounded-full">
-							<img src="{{article.author.avatar_url}}" />
-						</div>
-					</div>
-					<div class="flex flex-col ms-4">
-						<h5
-							class="text-sm text-fc-dark font-semibold"
-						>{{article.author.name}}</h5>
-						<p id="article-created" class="text-xs text-fc-dark">
-							{{date article.created_at format="medium"}}
-						</p>
-					</div>
-				</div>
 				<div id="article-content" class="article-content flex flex-col gap-2">
 					{{article.body}}
 				</div>
