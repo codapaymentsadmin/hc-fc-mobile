@@ -41,28 +41,28 @@
 		<article
 			class="flex-1 md:max-w-7xl mx-auto flex flex-col items-center px-4 xl:px-0"
 		>
-			<h3 class="text-2xl text-fc-dark md:text-3xl font-bold">
+			<h3 class="text-2xl text-fc-dark md:text-3xl text-center font-bold">
 				{{dc "ea_fcm_hc_connect_cs_title"}}
 			</h3>
 			<p class="mt-2 text-fc-dark text-center">
 				{{dc "ea_fcm_hc_connect_cs_subtitle"}}
 			</p>
 			<div
-				class="max-[640px]:w-full flex items-center flex-col sm:flex-row gap-2 mt-4"
+				class="w-full md:max-w-5xl flex justify-center items-center flex-wrap gap-2 mt-4"
 			>
 				<a
 					href="{{page_path 'new_request'}}"
-					class="btn w-full sm:w-[250px] bg-fc-green hover:bg-fc-green/85 border-none text-fc-dark"
+					class="btn w-max flex items-center bg-fc-green hover:bg-fc-green/85 border-none text-fc-dark"
 				>
 					<i class="ph ph-envelope text-fc-dark text-2xl"></i>
-					{{dc "ea_fcm_hc_contact_us_text"}}
+					<span>{{dc "ea_fcm_hc_contact_us_text"}}</span>
 				</a>
 				<a
 					href="https://store.fcm.ea.com/it-it"
 					class="btn w-full sm:w-[250px] bg-fc-green hover:bg-fc-green/85 border-none text-fc-dark"
 				>
 					<i class="ph ph-globe text-fc-dark text-2xl"></i>
-					{{dc "ea_fcm_hc_visit_webstore_text"}}
+					<span>{{dc "ea_fcm_hc_visit_webstore_text"}}</span>
 				</a>
 			</div>
 		</article>
