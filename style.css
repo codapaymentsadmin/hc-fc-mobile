@@ -2910,6 +2910,10 @@ details.collapse summary::-webkit-details-marker {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -3711,19 +3715,9 @@ form footer input[type="submit"]:disabled {
   }
 }
 
-@media (max-width: 640px) {
-  .max-\[640px\]\:w-full {
-    width: 100%;
-  }
-}
-
 @media (min-width: 640px) {
   .sm\:w-\[250px\] {
     width: 250px;
-  }
-
-  .sm\:flex-row {
-    flex-direction: row;
   }
 
   .sm\:px-0 {
@@ -3776,6 +3770,10 @@ form footer input[type="submit"]:disabled {
 
   .md\:w-\[75\%\] {
     width: 75%;
+  }
+
+  .md\:max-w-5xl {
+    max-width: 64rem;
   }
 
   .md\:max-w-7xl {
