@@ -1,5 +1,44 @@
 <section id="infobar-container" class="w-full flex flex-col">
 	{{dc "ea_fcm_hc_infobar_global"}}
+	<div
+		class="hidden regular-infobar-component bg-fc-green border-b border-fc-dark"
+	>
+		<div
+			role="alert"
+			class="alert alert-success bg-fc-green flex items-center max-w-7xl mx-auto border-x-0 border-y-0 px-4 py-2 rounded-none"
+		>
+			<i class="ph ph-bold ph-info text-2xl text-fc-dark me-2"></i>
+			<div id="infobar-content">
+				<p class="text-sm text-start font-semibold">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. A
+					commodi nihil delectus sunt, ad labore nam impedit numquam
+					hic aliquam?
+				</p>
+			</div>
+			<span class="infobar-dismiss ms-auto cursor-pointer">
+				<i class="ph ph-x"></i>
+			</span>
+		</div>
+	</div>
+
+	<div
+		class="hidden critical-infobar-component bg-fc-green border-b border-fc-dark"
+	>
+		<div
+			role="alert"
+			class="alert alert-error bg-fc-green flex items-center max-w-7xl mx-auto border-x-0 border-y-0 px-4 py-2 rounded-none"
+		>
+			<i class="ph ph-bold ph-x-circle text-2xl text-fc-dark me-2"></i>
+			<div id="infobar-content">
+				<p class="text-sm text-start font-semibold">
+					Error! Task failed successfully
+				</p>
+			</div>
+			<span class="infobar-dismiss ms-auto cursor-pointer">
+				<i class="ph ph-x"></i>
+			</span>
+		</div>
+	</div>
 </section>
 
 <section id="banner" class="w-full min-h-[250px] h-full relative">
@@ -41,10 +80,11 @@
 			class="flex-1 md:max-w-7xl mx-auto flex flex-col items-center px-4 xl:px-0"
 		>
 			<h3 class="text-2xl text-fc-dark md:text-3xl text-center font-bold">
-				{{dc "ea_fcm_hc_connect_cs_title"}}
+				Spojte sa so zákazníckou podporou
 			</h3>
 			<p class="mt-2 text-fc-dark text-center">
-				{{dc "ea_fcm_hc_connect_cs_subtitle"}}
+				Spojte sa s naším tímom zákazníckej podpory prostredníctvom
+				niektorého z nižšie uvedených kanálov.
 			</p>
 			<div
 				class="w-full md:max-w-5xl flex justify-center items-center flex-wrap gap-2 mt-4"
@@ -54,14 +94,15 @@
 					class="btn w-max flex items-center transition-colors bg-fc-green hover:bg-fc-green/85 border-none text-fc-dark"
 				>
 					<i class="ph ph-envelope text-fc-dark text-2xl"></i>
-					<span>{{dc "ea_fcm_hc_contact_us_text"}}</span>
+					<span>Kontaktujte nás</span>
 				</a>
 				<a
-					href="https://codashop.com/en-us/"
+					href="https://store.fcm.ea.com/international"
+					target="_blank"
 					class="btn w-max flex items-center transition-colors bg-fc-green hover:bg-fc-green/85 border-none text-fc-dark"
 				>
 					<i class="ph ph-globe text-fc-dark text-2xl"></i>
-					<span>{{dc "ea_fcm_hc_visit_webstore_text"}}</span>
+					<span>Navštívte Webstore</span>
 				</a>
 			</div>
 		</article>
@@ -70,10 +111,10 @@
 	<section id="all-articles-section" class="flex-1 bg-white py-8">
 		<article class="flex-1 md:max-w-7xl mx-auto flex flex-col px-4 xl:px-0">
 			<h3 class="text-2xl text-fc-dark md:text-3xl font-bold">
-				{{dc "ea_fcm_hc_homepage_articles_title"}}
+				Preskúmajte našu databázu znalostí
 			</h3>
 			<p class="mt-2 text-fc-dark text-sm">
-				{{dc "ea_fcm_hc_homepage_articles_subtitle"}}
+				Objavte rôzne užitočné články v tejto sekcii.
 			</p>
 
 			<div class="w-full flex flex-col gap-4 mt-8">
